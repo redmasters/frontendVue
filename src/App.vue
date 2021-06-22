@@ -24,15 +24,17 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Navbar from './components/Navbar.vue'
-import Users from './components/Users.vue'
+//import Navbar from './components/Navbar.vue'
+//import Users from './components/Users.vue'
+import Index from './components/Index.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    Navbar,
-    Users,
+    //Navbar,
+    //Users,
+    Index,
   }
 }
 </script>
