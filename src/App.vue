@@ -1,10 +1,25 @@
+<!--
 <template>
   <div id="app">
     <Navbar/>
      <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Users/>
    </div>
+</template> -->
+
+<template>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2><router-link to="/index">Subs</router-link></h2>
+        <router-link to="/create"
+          class="btn btn-sm btn-primary">Add sub
+        </router-link>
+
+        <router-view/>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
