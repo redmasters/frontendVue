@@ -12,31 +12,8 @@ Vue.use(VeeValidate);
 
 Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: "/",
-      redirect: '/index'
-    },
-    {
-      path: "/create",
-      name: "create",
-      component: () => import("./components/Create.vue")
-    },
-    {
-      path: "/edit/:id",
-      name: "index",
-      component: () => import('./components/Edit.vue')
-    },
-    {
-      path: "index",
-      name: "index",
-      component: () => import("./components/Index.vue")
-    }
-  ]
-})
-
 
 new Vue({
+  router,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');
